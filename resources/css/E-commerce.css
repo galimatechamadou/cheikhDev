@@ -1,0 +1,26 @@
+span{
+    color:rgb(0, 255, 128);
+    font-size: 30px;
+    border: 2px dashed rgb(0, 255, 128) ;
+    border-style: outset;
+
+}
+h1{
+    color: rgb(0, 255, 128);
+    font-family: italic;
+    font-size: 27px;
+    font-style: oblique 10deg;
+    
+    
+
+}
+#carouselExampleIndicators{
+    height: 72vh;
+}
+.carousel-inner{
+    height:100%;
+
+}
+.carousel-item{
+    height: 100% ;
+}
