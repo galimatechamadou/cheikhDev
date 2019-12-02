@@ -13,8 +13,8 @@
   
   <link href="{{asset('css/app.css')}}" rel="stylesheet" />
   <link href="{{asset('css/all.css')}}" rel="stylesheet" />
-  
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation|3d-float|neon
+">
   <!-- Custom styles for this template -->
   
   
@@ -27,7 +27,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a id ="titre"class="navbar-brand " href="#"><span>    Bienvenue à la plateforme de vente de materiels </span></a>
+      <a id ="titre"class="navbar-brand " href="#"><span class="font-effect-fire-animation">    Bienvenue à la plateforme de produits Hi Tech </span></a>
     
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -35,16 +35,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="E-commerce.php">Acceuil
+            <a class="nav-link font-effect-fire-animation" href="E-commerce.php">Acceuil
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="apropos.php">A Propos</a>
+            <a class="nav-link font-effect-fire-animation" href="apropos.php">A Propos</a>
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="contacts.php">Contact</a>
+            <a class="nav-link font-effect-fire-animation" href="contacts.php">Contact</a>
           </li>
         </ul>
       </div>
@@ -58,7 +58,7 @@
 
       <div class="col-lg-3">
 
-        <h1 id="h1"class="my-5  mx-2">E-MATERIELS</h1>
+        <h1 id="h1"class="my-5  mx-2 font-effect-neon ">E-Global Hitech</h1>
         <div class="list-group">
           <a href="agro.php" class="list-group-item">Agriculture</a>
           <a href="medical.php" class="list-group-item">MEDICAL</a>
@@ -90,6 +90,7 @@
         <div id="image">
           <div class="s" role="listbox">
             <div class="carousel-item active">
+              <div class="texte1">Tu peux toujours mettre ton texte ICI</div>
               <img class="d-block img-fluid" src="images/sport1.jpg" alt="First slide" width="900" height="350">
             </div>
             <div class="carousel-item">
