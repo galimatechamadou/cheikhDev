@@ -1,18 +1,8 @@
-span{
-    color:rgb(0, 255, 128);
-    font-size: 30px;
-    
 
-}
 h1{
-    color: rgb(0, 255, 128);
-    font-family: italic;
-    font-size: 27px;
-    font-style: oblique 10deg;
-    
-    
-
+    width: 100%;
 }
+
 #carouselExampleIndicators{
     height: 72vh;
 }
@@ -22,4 +12,21 @@ h1{
 }
 .carousel-item{
     height: 100% ;
+}
+.text {
+    display: inline-block;
+    position: relative;
+}
+.text.carousel-item active {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    font-family: Georgia;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 30%;
+    color: white;
+    width: 70%;
 }

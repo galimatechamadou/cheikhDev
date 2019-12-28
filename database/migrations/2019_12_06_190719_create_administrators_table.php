@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDeliveriesTable extends Migration
+class CreateAdministratorsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,14 @@ class CreateDeliveriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('deliveries', function (Blueprint $table) {
+        Schema::create('administrators', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('produit_livre');
-            $table->date('date_livraison');
+            $table->string('name_admin');
+            $table->string('prenom_admin');
+            $table->string('email');
+            $table->integer('num_tel');
+            $table->string('status');
+            $table->string('password');
             $table->timestamps();
         });
     }
@@ -28,6 +32,6 @@ class CreateDeliveriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('deliveries');
+        Schema::dropIfExists('administrators');
     }
 }

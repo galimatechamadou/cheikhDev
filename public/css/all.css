@@ -1,19 +1,8 @@
-span{
-    color:rgb(0, 255, 128);
-    font-size: 30px;
-    border: 2px dashed rgb(0, 255, 128) ;
-    border-style: outset;
 
-}
 h1{
-    color: rgb(0, 255, 128);
-    font-family: italic;
-    font-size: 27px;
-    font-style: oblique 10deg;
-    
-    
-
+    width: 100%;
 }
+
 #carouselExampleIndicators{
     height: 72vh;
 }
@@ -24,17 +13,20 @@ h1{
 .carousel-item{
     height: 100% ;
 }
-
-/*!
- * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
- */
-body {
-  padding-top: 56px;
+.text {
+    display: inline-block;
+    position: relative;
 }
-#d-block img-fluid{
- 
-    width: 900px;
-    height: 350px;
+.text.carousel-item active {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    font-family: Georgia;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 30%;
+    color: white;
+    width: 70%;
 }

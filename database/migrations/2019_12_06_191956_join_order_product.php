@@ -13,14 +13,17 @@ class JoinOrderProduct extends Migration
      */
     public function up()
     {
-        // 
+        
         Schema::create('Order_Product', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->unsignedBigInteger('Order_id');
-            $table->unsignedBigInteger('Product_id');
-            
-            $table->timestamps();
+
+                       $table->BigIncrements('id');
+                       $table->unsignedBigInteger('Order_id');
+                       $table->unsignedBigInteger('Product_id');
+                       $table->timesTamps();
+                                                                     
+
         });
+        
     }
 
     /**
@@ -31,6 +34,5 @@ class JoinOrderProduct extends Migration
     public function down()
     {
         //
-        Schema::dropIfExists('Order_Product');
     }
 }

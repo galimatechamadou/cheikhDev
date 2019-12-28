@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class delivery extends Model
+class Delivery extends Model
 {
     //
-    public function delivery(){
+    public function Order(){
         return $this->hasMany("App\Order");
     }
 }

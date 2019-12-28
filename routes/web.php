@@ -11,8 +11,27 @@
 |
 */
 
-Route::get('/',"categoriesController@index");
+
+Route::get('/produit','ProductsController@index')->name('products');
+Route::get('/products/create','ProductsController@create')->name('product_create');
+Route::post('/products/create','ProductsController@store')->name('store_products');
+
+Route::get('products/{id}/edit','ProductsController@edit')->name("editer_produit");
+Route::patch('products/{id}/edit', 'ProductsController@update')->name('update_product');
+Route::get('/ajouproduit', 'ProductsController@create')->name('create_product')->middleware('auth');
+
+Route::delete('product/{id}','ProductsController@destroy');
 
 Auth::routes();
+//Route::get('/', 'HomeController@acceuil');
+Route::get('/home', 'HomeController@index');
+//Route::get('/orders/description', 'ProductsController@desc');
+//Route::get('/orders/achat', 'ProductsController@achat');
+Route::get("/produit/{id}/show", 'ProductsController@show');
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
+
+

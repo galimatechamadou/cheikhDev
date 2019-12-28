@@ -13,7 +13,7 @@
   
   <link href="{{asset('css/app.css')}}" rel="stylesheet" />
   <link href="{{asset('css/all.css')}}" rel="stylesheet" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation|3d-float|neon
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation|3d-float|neon|canvas-print 	
 ">
   <!-- Custom styles for this template -->
   
@@ -35,22 +35,22 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link font-effect-fire-animation" href="E-commerce.php">Acceuil
+            <a class="nav-link font-effect-canvas-print " href="">S'enregistrer
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link font-effect-fire-animation" href="apropos.php">A Propos</a>
+            <a class="nav-link " href="">Se Connecter</a>
           </li>
           
           <li class="nav-item">
-            <a class="nav-link font-effect-fire-animation" href="contacts.php">Contact</a>
+            <a class="nav-link " href="">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
+  
   <!-- Page Content -->
   <div class="container">
 
@@ -58,13 +58,13 @@
 
       <div class="col-lg-3">
 
-        <h1 id="h1"class="my-5  mx-2 font-effect-neon ">E-Global Hitech</h1>
+        <h1 id="h1"class="my-5  mx-2 font-effect-neon "> E-Global Hitech</h1>
         <div class="list-group">
-          <a href="agro.php" class="list-group-item">Agriculture</a>
-          <a href="medical.php" class="list-group-item">MEDICAL</a>
-          <a href="sport.php" class="list-group-item">SPORT</a>
-          <a href="auto.php" class="list-group-item">AUTOMOBILE</a>
-          <a href="btp.php" class="list-group-item">BTP</a>
+          <a href="" class="list-group-item">Agriculture</a>
+          <a href="" class="list-group-item">MEDICAL</a>
+          <a href="" class="list-group-item">SPORT</a>
+          <a href="" class="list-group-item">AUTOMOBILE</a>
+          <a href="" class="list-group-item">BTP</a>
           
         </div>
 
@@ -88,37 +88,38 @@
             
           </ol>
         <div id="image">
-          <div class="s" role="listbox">
+          <div class="text" role="listbox">
             <div class="carousel-item active">
-              <div class="texte1">Tu peux toujours mettre ton texte ICI</div>
-              <img class="d-block img-fluid" src="images/sport1.jpg" alt="First slide" width="900" height="350">
+            
+              <img class="d-block img-fluid" src="{{URL::asset('/images/sport1.jpg')}}" alt="First slide" width="900" height="350">
+              <h1> PRODUIT DISPO</h1>
             </div>
             <div class="carousel-item">
-              <img class="d-block img-fluid" src="images/sport2.jpg" alt="Second slide" width="900" height="350">
+              <img class="d-block img-fluid" src="{{URL::asset('/images/sport2.jpg')}}" alt="Second slide" width="900" height="350">
             </div>
             <div class="carousel-item">
-              <img class="d-block img-fluid" src="images/sport3.jpg" alt="second slide" width="960" height="500">
+              <img class="d-block img-fluid" src="{{URL::asset('/images/sport3.jpg')}}" alt="second slide" width="960" height="500">
             </div>
             <div class="carousel-item">
-              <img class="d-block img-fluid" src="images/dronesblanc.jpg" alt="third slide" width="700" height="250">
+              <img class="d-block img-fluid" src="{{URL::asset('/images/dronesblanc.jpg')}}" alt="third slide" width="700" height="250">
             </div>
             <div class="carousel-item">
-              <img class="d-block img-fluid" src="images/btp5.png" alt="Fourth slide" width="900" height="350">
+              <img class="d-block img-fluid" src="{{URL::asset('/images/btp5.png')}}" alt="Fourth slide" width="900" height="350">
             </div>
             <div class="carousel-item">
-              <img class="d-block img-fluid" src="images/btp1.jpg" alt="Fifth slide" width="900" height="350">
+              <img class="d-block img-fluid" src="{{URL::asset('/images/btp1.jpg')}}" alt="Fifth slide" width="900" height="350">
             </div>
             <div class="carousel-item">
-              <img class="d-block img-fluid" src="images/sony1.jpg" alt="Sixth slide" width="900" height="350">
+              <img class="d-block img-fluid" src="{{URL::asset('/images/sony1.jpg')}}" alt="Sixth slide" width="900" height="350">
             </div>
             <div class="carousel-item">
-              <img class="d-block img-fluid" src="images/arroseur.png" alt="Seventh slide" width="900" height="350">
+              <img class="d-block img-fluid" src="{{URL::asset('/images/arroseur.png')}}" alt="Seventh slide" width="900" height="350">
             </div>
             <div class="carousel-item">
-              <img class="d-block img-fluid" src="images/sport1.jpg" alt="Eight slide" width="900" height="350">
+              <img class="d-block img-fluid" src="{{URL::asset('/images/sport1.jpg')}}" alt="Eight slide" width="900" height="350">
             </div>
             <div class="carousel-item">
-              <img class="d-block img-fluid" src="images/sport2.jpg" alt="Ninth slide" width="900" height="350">
+              <img class="d-block img-fluid" src="{{URL::asset('/images/sport2.jpg')}}" alt="Ninth slide" width="900" height="350">
             </div>
             
             </div>
@@ -135,101 +136,33 @@
 
         <div class="row">
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="images/drones1.jpg" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">DRONE AGRICOLE</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text"> Découvrez les nouvelles technologies appliquées à l'Agriculture . </p>
-              </div>
-              <div class="card-footer">
+        @foreach($products as $product)
+<div class="col-lg-4 col-sm-6 portfolio-item">
+   <div class="card h-100">
+       <a href="#"><img class="card-img-top" src="{{$product->images ?? asset('storage/images/default.png')}}"  height="180" width="180" alt=""></a>
+       <div class="card-body">
+           <h4 class="card-title">
+               <a href="/produit/{{$product->id}}/show">{{$product->name}} drone agricole </a>
+           </h4>
+           <p class="card-text">{!! \Illuminate\Support\Str::words($product->description, 25,'....')  !!}</p>
+       </div>
+       <div class="card-footer">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
+        </div>
+   </div>
+</div>
+@endforeach
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="images/scanner1.jpg" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#"> SCANNER</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text"> Des scanner modernes , pour des analyses garanties .</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="images/btp2.jpg" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">MACHINES BTP</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text"> Regardez nos nouveaux machines BTP, Pour des batiments de qualité .</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
+        
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="images/sony1.jpg" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#"> Televiseur</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text"> De nouvelles gammes de téléviseur ecran LED.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="images/sport2.jpg" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Musculateur</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text"> Des appareils sportifs hautement sophistiqués .</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="images/drones2.jpg" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Item Six</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
+
+
+
+
+
 
         </div>
         <!-- /.row -->
@@ -265,7 +198,7 @@
         <div class="col-md-6 col-lg-7 text-center text-md-right">
 
           <!-- Facebook -->
-          <a class="fb-ic">
+          <a class="fb-ic" >
             <i class="fa fa-facebook"> </i>
           </a>
           <!-- Twitter -->

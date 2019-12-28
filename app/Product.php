@@ -7,15 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     //
-    public function category(){
-        return $this->belongsTo('App\Category');
+    protected $guarded = [];
+    public function Category(){
+        return $this ->belongsTo('App\Category');
     }
-
-    public function administrator(){
-        return $this->belongsTo('App\administrator');
-    }
-    public function Order(){
-        return $this->belongsToMany('App\Order');
-    }
-    
+   
+    public function Administrator(){
+        return $this ->belongsTo('App\Administrator');
+   }
+   public function Order(){
+        return $this ->belongsToMany('App\Order');
+   }
+   
 }
