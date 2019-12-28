@@ -92,15 +92,18 @@ class ProductsController extends Controller
          $produit->image_product = $folder.$image_name.'.'.$image->getClientOriginalExtension();
          //Maintenant nous pouvons enregistrer l'image dans le dossier en utilisant la methode uploadImage();
          $file = $this->uploadImage($image, $folder, 'public', $image_name);
-         //dd($file,$produit->image_product);
          
      }
   
      $produit->name_product = $request->input('name_product');
      $produit->prix_product = $request->input('prix_product');
      $produit->description_product = $request->input('description_product');
-     $produit->category_id = $request->input('category_id');
+     $produit->admin_id = 1;
+     //$produit->category_id = $request->input('category_id');
+     $produit->category_id = 1;
      $produit->save();
+     //dd($file,$produit->image_product);
+
      return redirect('/produit');
    }
    

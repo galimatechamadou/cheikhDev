@@ -31,7 +31,7 @@
                <th>{{$product->name_product}}</th>
                <th>{{$product->prix_product}} {{ $product->category->name ?? '' }}</th>
                <th>{{$product->image_product}}</th>
-               <th><img src="{{$product->images ? asset($product->images) : asset('storage/uploads/images/default.png')}}" alt="{{$product->name}}" width="100"></th>
+               <th><img src="{{$product->image_product ? asset($product->image_product) : asset('uploads/images/default.png')}}" alt="{{$product->name}}" width="100"></th>
                <th></th>
         
             
